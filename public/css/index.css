@@ -382,8 +382,8 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  max-width: min(50%, 1300px);
-  margin: 35px 110px 30px;
+  max-width: min(40%, 1300px);
+  margin: 35px 160px 30px;
 }
 
 .tl-item:nth-child(2):before {
@@ -392,8 +392,8 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  max-width: min(60%, 1300px);
-  margin: 40px 100px 30px;
+  max-width: min(55%, 1300px);
+  margin: 40px 130px 30px;
 }
 
 .tl-item:nth-child(3):before {
@@ -402,8 +402,8 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  max-width: min(55%, 1300px);
-  margin: 30px 105px 30px;
+  max-width: min(50%, 1300px);
+  margin: 30px 145px 30px;
 }
 
 .tl-item:before {
