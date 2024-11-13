@@ -975,15 +975,23 @@ footer {
   }
 
   .tl-item:nth-child(1):before {
-    margin: 35px 95px 30px;
+    margin: 35px 115px 30px;
   }
 
   .tl-item:nth-child(2):before {
-    margin: 40px 90px 30px;
+    margin: 40px 95px 30px;
   }
 
   .tl-item:nth-child(3):before {
-    margin: 30px 90px 30px;
+    margin: 30px 95px 30px;
+  }
+
+  .tl-year {
+    top: 45%;
+  }
+
+  .tl-content {
+    top: 50%;
   }
 
   .about-me-header, .experiences-header {
