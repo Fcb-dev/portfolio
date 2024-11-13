@@ -986,11 +986,11 @@ footer {
     margin: 30px 25% 30px;
   }
 
-  .tl-year {
+  .tl-item:hover .tl-year {
     top: 45%;
   }
 
-  .tl-content {
+  .tl-item:hover .tl-content {
     top: 50%;
   }
 
@@ -1018,11 +1018,13 @@ footer {
 }
 
 @media screen and (max-width: 375px) {
-  .tl-year {
+
+  .tl-item:hover .tl-year {
     top: 40%;
   }
 
-  .tl-content {
+  .tl-item:hover .tl-content {
     top: 45%;
   }
+
 }
