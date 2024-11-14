@@ -177,7 +177,7 @@ body {
   justify-content: center;
   background: linear-gradient(173deg, #0c0c0c, #1c1b1b, #2d2d2d),
     url("../assets/img/sky.jpg") !important;
-  height: calc(100vh - 70px);
+  /* height: calc(100vh - 70px); */
   background-size: cover cover;
   background-position: center;
   background-blend-mode: lighten;
@@ -396,7 +396,8 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   max-width: min(40%, 1300px);
-  margin: 35px 160px 30px;
+  top: 50px;
+  left: 25%;
 }
 
 .tl-item:nth-child(2):before {
@@ -406,7 +407,8 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   max-width: min(55%, 1300px);
-  margin: 40px 130px 30px;
+  top: 50px;
+  left: 29%;
 }
 
 .tl-item:nth-child(3):before {
@@ -416,7 +418,8 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   max-width: min(50%, 1300px);
-  margin: 30px 145px 30px;
+  top: 50px;
+  left: 25%;
 }
 
 .tl-item:before {
@@ -988,15 +991,18 @@ footer {
   }
 
   .tl-item:nth-child(1):before {
-    margin: 35px 30% 30px;
+    top: 50px;
+    left: 29%;
   }
 
   .tl-item:nth-child(2):before {
-    margin: 40px 25% 30px;
+    top: 50px;
+    left: 25%;
   }
 
   .tl-item:nth-child(3):before {
-    margin: 30px 25% 30px;
+    top: 50px;
+    left: 25%;
   }
 
   .tl-item:hover .tl-year {
