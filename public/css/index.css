@@ -397,7 +397,7 @@ body {
   width: 100%;
   max-width: min(40%, 1300px);
   top: 50px;
-  left: 25%;
+  left: 29%;
 }
 
 .tl-item:nth-child(2):before {
@@ -408,7 +408,7 @@ body {
   width: 100%;
   max-width: min(55%, 1300px);
   top: 50px;
-  left: 29%;
+  left: 25%;
 }
 
 .tl-item:nth-child(3):before {
