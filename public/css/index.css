@@ -417,7 +417,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  max-width: min(50%, 1300px);
+  max-width: min(48%, 1300px);
   top: 50px;
   left: 25%;
 }
