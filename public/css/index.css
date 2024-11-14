@@ -1,5 +1,8 @@
 body {
   background-color: #1c1c1c;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
 }
 
 .text-yellow {
@@ -103,6 +106,16 @@ body {
   background: #1c1c1c;
   position: fixed;
   z-index: 10;
+}
+
+#home, #about_me, #experiences, #projects , #contact {
+  scroll-snap-align: start;
+}
+
+.navbar-logo > a:hover {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
 }
 
 .container,
