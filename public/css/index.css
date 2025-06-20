@@ -66,8 +66,10 @@ body {
 }
 
 .slide-in-elliptic-top-fwd {
-	-webkit-animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-elliptic-top-fwd 1s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
 }
 
 .bounce-in-bottom {
@@ -108,7 +110,11 @@ body {
   z-index: 10;
 }
 
-#home, #about_me, #experiences, #projects , #contact {
+#home,
+#about_me,
+#experiences,
+#projects,
+#contact {
   scroll-snap-align: start;
 }
 
@@ -140,7 +146,9 @@ body {
   text-decoration: none;
 }
 
-.about-me-header, .experiences-header, .projects-header {
+.about-me-header,
+.experiences-header,
+.projects-header {
   padding: 60px 0px;
   text-align: center;
 }
@@ -162,7 +170,8 @@ body {
 }
 
 #footer-section {
-  background: linear-gradient(150deg, #ffffff, #1c1c1c, #9f9f9f, #a2a2a2), url(../assets/img/bg-projects.jpg);
+  background: linear-gradient(150deg, #ffffff, #1c1c1c, #9f9f9f, #a2a2a2),
+    url(../assets/img/bg-projects.jpg);
   background-size: cover;
   background-position: top;
   background-blend-mode: multiply;
@@ -206,13 +215,15 @@ body {
   line-height: 1;
 }
 
-#projects, #contact {
+#projects,
+#contact {
   padding-bottom: 30px;
 }
 
 .experiences-justify {
   display: flex;
   justify-content: center;
+  max-width: 1240px;
 }
 
 .projects-justify {
@@ -221,36 +232,56 @@ body {
 }
 
 .projects-justify > div {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
   max-width: min(90%, 1300px);
   gap: 40px;
 }
 
-.project-adv > img, .project-futrading > img {
+.project-adv > img,
+.project-futrading > img,
+.front-end-challenger > img,
+.otica-lamendes > img,
+.easymidia > img {
   width: 100%;
   border-radius: 25px;
 }
 
-.project-adv > img ,
-.project-futrading > img {
+.project-adv > img,
+.project-futrading > img,
+.front-end-challenger > img,
+.otica-lamendes > img,
+.easymidia > img {
   width: 100%;
-  outline: calc(100%/2) solid #0009;
-  outline-offset: calc(100%/-2);
+  outline: calc(100% / 2) solid #0009;
+  outline-offset: calc(100% / -2);
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.project-adv > img:hover ,
-.project-futrading > img:hover {
+.project-adv > img:hover,
+.project-futrading > img:hover,
+.front-end-challenger > img:hover,
+.otica-lamendes > img:hover,
+.easymidia > img:hover {
   outline: 5px solid #ffd500;
   outline-offset: 12px;
   box-shadow: 0px 0px 10px #000;
 }
 
-.project-adv > img +
-.project-futrading > img {
+.project-adv
+  > img
+  + .project-futrading
+  > img
+  .front-end-challenger
+  > img
+  + .oticalamendes
+  > img
+  .easymidia
+  > img
+  + .otica-lamendes
+  > img {
   border-radius: 50%;
 }
 
@@ -264,7 +295,10 @@ body {
   max-width: min(90%, 1300px);
 }
 
-.btn-github, .btn-linkedin, .btn-whatsapp, .email {
+.btn-github,
+.btn-linkedin,
+.btn-whatsapp,
+.email {
   font-size: 20px;
   background-color: #ffd500;
   padding: 5px 8px 0px;
@@ -274,7 +308,10 @@ body {
   transition: all 0.4s;
 }
 
-.btn-github:hover, .btn-linkedin:hover, .btn-whatsapp:hover, .email:hover {
+.btn-github:hover,
+.btn-linkedin:hover,
+.btn-whatsapp:hover,
+.email:hover {
   transition: all 0.4s;
   background-color: #0e0e0e;
   color: #ffd500;
@@ -349,8 +386,17 @@ body {
 
 #timeline {
   display: flex;
-  background: linear-gradient(150deg, #2d2d2d, #262626, #1b1b1b, #171717, transparent, #101010);
+  background: linear-gradient(
+    150deg,
+    #2d2d2d,
+    #262626,
+    #1b1b1b,
+    #171717,
+    transparent,
+    #101010
+  );
   padding-bottom: 90px;
+  justify-content: center;
 }
 
 #timeline:hover .tl-item {
@@ -384,7 +430,12 @@ body {
 
 .tl-item:after {
   /* background: linear-gradient(181deg, #292828, #0e0e0e, black); */
-  background: linear-gradient(141deg, #313131, transparent, #0e0e0e); /* Conversão do transparentize */
+  background: linear-gradient(
+    141deg,
+    #313131,
+    transparent,
+    #0e0e0e
+  ); /* Conversão do transparentize */
   opacity: 1;
   transition: opacity 0.5s ease;
 }
@@ -422,12 +473,19 @@ body {
   left: 25%;
 }
 
+.tl-item:nth-child(4):before {
+  background: url(../assets/img/logo-mwonline.png);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: min(48%, 1300px);
+  top: 50px;
+  left: 25%;
+}
+
 .tl-item:before {
-  background: linear-gradient(
-    to bottom,
-    #1c1c1c 0%,
-    #0e0e0e 75%
-  );
+  background: linear-gradient(to bottom, #1c1c1c 0%, #0e0e0e 75%);
   z-index: 1;
   opacity: 0;
   transform: translate3d(0, 0, 0) translateY(50%);
@@ -466,6 +524,27 @@ body {
   margin: 0 1.618em;
   top: 55%;
   opacity: 0;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.tl-content::-webkit-scrollbar {
+  background-color: #000;
+  border-radius: 10px;
+  width: 6px;
+}
+
+.tl-content::-webkit-scrollbar-thumb {
+  background-color: #ffd500;
+  border-radius: 10px;
+  width: 6px;
+}
+
+.tl-content::-webkit-scrollbar-track {
+  background-color: #141414;
+  border-radius: 10px;
+  width: 6px;
 }
 
 .tl-content h1 {
@@ -616,16 +695,16 @@ footer {
 @-webkit-keyframes slide-in-elliptic-top-fwd {
   0% {
     -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
     -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
     -webkit-transform-origin: 50% 1400px;
-            transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
     opacity: 1;
   }
 }
@@ -633,20 +712,19 @@ footer {
 @keyframes slide-in-elliptic-top-fwd {
   0% {
     -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
     -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
     -webkit-transform-origin: 50% 1400px;
-            transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
     opacity: 1;
   }
 }
-
 
 @-webkit-keyframes bounce-in-bottom {
   0% {
@@ -915,7 +993,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-
   .hide-mobile {
     display: none;
   }
@@ -923,6 +1000,14 @@ footer {
   .show-mobile {
     display: flex;
     justify-content: center;
+  }
+
+  .projects-justify > div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 40px;
   }
 
   .show-mobile > img {
@@ -980,9 +1065,11 @@ footer {
   .experiences-justify {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
-  .tl-item, .tl-item:hover {
+  .tl-item,
+  .tl-item:hover {
     width: 95% !important;
   }
 
@@ -1013,7 +1100,8 @@ footer {
     top: 50%;
   }
 
-  .about-me-header, .experiences-header {
+  .about-me-header,
+  .experiences-header {
     padding: 30px 0px 20px;
   }
 
@@ -1029,7 +1117,7 @@ footer {
     flex-direction: column;
   }
 
-  .project-adv > img:hover ,
+  .project-adv > img:hover,
   .project-futrading > img:hover {
     outline: 3px solid #ffd500;
     outline-offset: 8px;
@@ -1037,7 +1125,6 @@ footer {
 }
 
 @media screen and (max-width: 375px) {
-
   .tl-item:hover .tl-year {
     top: 40%;
   }
@@ -1045,5 +1132,4 @@ footer {
   .tl-item:hover .tl-content {
     top: 45%;
   }
-
 }
