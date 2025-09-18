@@ -253,7 +253,8 @@ canvas {
 .project-futrading > img,
 .front-end-challenger > img,
 .otica-lamendes > img,
-.easymidia > img {
+.easymidia > img,
+.petepet > img {
   width: 100%;
   border-radius: 25px;
 }
@@ -262,7 +263,8 @@ canvas {
 .project-futrading > img,
 .front-end-challenger > img,
 .otica-lamendes > img,
-.easymidia > img {
+.easymidia > img,
+.petepet > img {
   width: 100%;
   outline: calc(100% / 2) solid #0009;
   outline-offset: calc(100% / -2);
@@ -274,7 +276,8 @@ canvas {
 .project-futrading > img:hover,
 .front-end-challenger > img:hover,
 .otica-lamendes > img:hover,
-.easymidia > img:hover {
+.easymidia > img:hover,
+.petepet > img:hover {
   outline: 5px solid #ffd500;
   outline-offset: 12px;
   box-shadow: 0px 0px 10px #000;
@@ -291,6 +294,8 @@ canvas {
   .easymidia
   > img
   + .otica-lamendes
+  > img
+  + .petepet
   > img {
   border-radius: 50%;
 }
