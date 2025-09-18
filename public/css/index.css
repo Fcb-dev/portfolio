@@ -333,6 +333,28 @@ canvas {
   border: 1px solid #ffd500;
 }
 
+.shape-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+
+#skills {
+  padding: 60px 10%;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .wrapper {
   position: relative;
   bottom: 35px;
