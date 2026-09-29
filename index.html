@@ -1,535 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Felipe Bernardo</title>
-    <link
-      rel="shortcut icon"
-      type="imagex/png"
-      href="public/assets/img/logo.ico"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link href="public/css/navbar.css" rel="stylesheet" />
-    <link href="public/css/index.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="main">
-      <div>
-        <nav class="navbar navbar-expand-custom navbar-mainbg">
-          <div class="navbar-brand navbar-logo">
-            <a href="#home" class="cursor-pointer text-white">
-              <div
-                class="d-flex align-items-center gap-1"
-                style="font-size: 28px"
-              >
-                <span>{ </span>
-                <div class="d-flex">
-                  <span class="font-bold text-yellow pr-1">F.</span>
-                  <span class="font-bold">B</span>
-                </div>
-                <i class="bx bxs-star m-0" style="font-size: 10px"></i>
-                <span class="text-yellow">portfolio</span>
-                <span> }</span>
-              </div>
-            </a>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="bx bx-menu text-white"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <div class="hori-selector">
-                <div class="left hide-mobile"></div>
-                <div class="right hide-mobile"></div>
-              </div>
-              <li class="nav-item active">
-                <a class="nav-link" href="#home"
-                  ><i class="bx bx-home"></i>Início</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about_me"
-                  ><i class="bx bx-user"></i>Sobre mim</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#experiences"
-                  ><i class="bx bx-rocket"></i>Experiências</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills"
-                  ><i class="bx bx-brain"></i>Habilidades</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects"
-                  ><i class="bx bx-code-alt"></i>Projetos</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact"
-                  ><i class="bx bx-phone"></i>Contato</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#161814">
+  <meta name="description" content="Felipe Bernardo, desenvolvedor full stack. Interfaces, experiências digitais e aplicações com React, TypeScript e atenção a cada detalhe.">
+  <title>Felipe Bernardo — Desenvolvedor Full Stack</title>
+  <link rel="icon" href="public/assets/img/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/svg+xml" href="public/assets/img/favicon.svg?v=3" sizes="any">
+  <link rel="apple-touch-icon" href="public/assets/img/apple-touch-icon.png?v=2">
+  <link rel="stylesheet" href="public/css/index.css">
+  <script src="public/js/index.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Felipe Bernardo, início">fb<span>®</span></a>
+    <nav id="navigation" aria-label="Navegação principal">
+      <a href="#projects">Projetos <span>01</span></a><a href="#about_me">Sobre <span>02</span></a><a href="#experiences">Trajetória <span>03</span></a><a href="#skills">Stack <span>04</span></a>
+    </nav>
+    <a class="contact-link" href="#contact">Vamos conversar <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Abrir menu">Menu <span aria-hidden="true">＋</span></button>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-top"><span><i class="status-dot"></i> DESENVOLVEDOR FULL STACK</span><span>BRASIL · PORTFÓLIO</span></div>
+      <h1 id="hero-title">FELIPE<span>BERNARDO<span class="name-dot">.</span></span></h1>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="art-cross">✳</span><span class="art-code">&lt;/&gt;</span></div>
+      <div class="hero-bottom"><div><p>Ideias ganham forma.<br>Experiências ganham vida.</p><span class="hero-description">Código, design e atenção aos detalhes.<br>Construindo uma web que faz sentido.</span></div><a class="round-link" href="#projects" aria-label="Explorar projetos"><span aria-hidden="true">↘</span></a><span class="hero-index">SCROLL PARA EXPLORAR<br><span>01 — 05</span></span></div>
+    </section>
+    <div class="ticker" aria-hidden="true"><div>INTERFACES COM PROPÓSITO <span>✳</span> CÓDIGO COM PERSONALIDADE <span>✳</span> EXPERIÊNCIAS DIGITAIS <span>✳</span></div></div>
+    <section class="projects section" id="projects">
+      <div class="section-heading"><div><span class="eyebrow">01 / PROJETOS SELECIONADOS</span><h2>Do conceito<br>ao <em>clique.</em></h2></div><p>Uma seleção de projetos dos quais participei.<br>Desafios diferentes. O mesmo cuidado com a experiência.</p></div>
+      <div class="project-grid">
+        <a class="project" href="https://futrading.com" target="_blank" rel="noopener noreferrer"><div class="project-image mint"><img src="public/assets/img/home-futrading.png" alt="Interface da plataforma Futrading" loading="lazy" width="1200" height="700"><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-info"><div><h3>Futrading</h3><p>PLATAFORMA DIGITAL · FRONT-END</p></div><span>01</span></div></a>
+        <a class="project" href="https://www.agenciaeasymidia.com.br/" target="_blank" rel="noopener noreferrer"><div class="project-image lilac"><img src="public/assets/img/easymidia.png" alt="Site da agência Easy Mídia" loading="lazy" width="1200" height="700"><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-info"><div><h3>Easy Mídia</h3><p>SITE INSTITUCIONAL · WEB</p></div><span>02</span></div></a>
+        <a class="project" href="https://app.petepet.pet" target="_blank" rel="noopener noreferrer"><div class="project-image peach"><img src="public/assets/img/petepet.png" alt="Interface da aplicação Pet&amp;pet" loading="lazy" width="1200" height="700"><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-info"><div><h3>Pet&amp;pet</h3><p>APLICAÇÃO WEB · INTERFACE</p></div><span>03</span></div></a>
+        <a class="project" href="https://serprolar.com/" target="_blank" rel="noopener noreferrer"><div class="project-image sand"><img src="public/assets/img/prolar.png" alt="Prolar: plataforma de soluções em serviços técnicos e assistência residencial" loading="lazy" width="1904" height="915"><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-info"><div><h3>Prolar</h3><p>PLATAFORMA DE SERVIÇOS TÉCNICOS · WEB</p></div><span>04</span></div></a>
       </div>
-      <div class="w-100">
-        <section class="bg-pan-top" id="home">
-          <div class="home-justify">
-            <div class="d-flex flex-column gap-1 slide-in-blurred-left">
-              <span class="text-yellow font-bold font-xl text-pop-up-top"
-                >Olá, sou Felipe!</span
-              >
-              <h2
-                class="text-dark-gray m-0 font-bold text-white text-pop-up-top px-1"
-              >
-                Desenvolvedor Front-end
-              </h2>
-              <h5 class="text-light-gray text-pop-up-top m-0 px-1">
-                Conheça mais sobre mim rolando para baixo!
-              </h5>
-              <div class="wrapper px-1">
-                <div class="link_wrapper">
-                  <a href="#contact" class="btn-contact">Fale comigo</a>
-                  <div class="icon">
-                    <i class="bx bx-phone-outgoing"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="bounce-in-bottom hide-mobile">
-              <img src="public/assets/img/rocket-no-bg.png" alt="Foguete" />
-            </div>
-          </div>
-        </section>
-        <section id="about_me">
-          <div class="d-flex flex-column">
-            <div class="about-me-header">
-              <h2 class="text-center text-yellow font-bold">Sobre mim</h2>
-              <div class="show-mobile py-3">
-                <img
-                  src="public/assets/img/eu-mobile.png"
-                  alt="Pessoa Mobile"
-                />
-              </div>
-            </div>
-            <div class="about-justify">
-              <div class="bounce-in-left hide-mobile">
-                <img src="public/assets/img/eu.png" alt="Pessoa" />
-              </div>
-              <div
-                class="d-flex flex-column align-items-center justify-content-center slide-in-blurred-right"
-              >
-                <div
-                  class="text-white d-flex flex-column justify-content-center px-5 gap-3"
-                >
-                  <h4 class="text-justify">
-                    Olá! Sou um desenvolvedor front-end com mais de 2 anos de
-                    experiência, especializado em criar interfaces intuitivas e
-                    elegantes. Com sólidos conhecimentos em CSS e JavaScript,
-                    bem como vivências reais com React e React Native, estou
-                    sempre em busca de novas abordagens para tornar as
-                    experiências digitais mais atraentes e funcionais.
-                  </h4>
-                  <h4 class="text-justify">
-                    Além disso, tenho uma sólida experiência com Laravel e
-                    habilidades em SQL, Git e Figma, o que me permite trabalhar
-                    de maneira integrada e eficiente em diversos projetos. Minha
-                    facilidade para colaborar em equipe, adaptar-me a mudanças e
-                    aprender novas tecnologias fortalece minha habilidade de
-                    contribuir em projetos dinâmicos.
-                  </h4>
-                  <h4 class="text-justify">
-                    Apaixonado pela criação e inovação, estou sempre pronto para
-                    transformar ideias em soluções digitais envolventes e
-                    impactantes!
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="experiences">
-          <div class="d-flex flex-column">
-            <div class="experiences-header">
-              <h2 class="text-center text-yellow font-bold">Experiências</h2>
-            </div>
-            <section id="timeline">
-              <div class="experiences-justify">
-                <div class="tl-item">
-                  <div class="tl-year">
-                    <p class="f2 heading--sanSerif font-bold">Edutec</p>
-                    <span class="text-white font-bold font-xs"
-                      >Março/2021 - Março/2022</span
-                    >
-                  </div>
-                  <div class="tl-content">
-                    <h1 class="f3 text--accent ttu">Analista de sistemas</h1>
-                    <p class="text-white text-justify">
-                      Responsável por dar suporte a software de gestão escolar,
-                      auxiliando usuários a obterem os melhores resultados no
-                      uso da ferramenta, assim, otimizando ao máximo a entrega e
-                      qualidade do serviço. Nos primeiros 3 meses, tive
-                      participação ativa no fechamento de 4 clientes novos,
-                      capacitando mais de 15 profissionais das escolas para
-                      proporcionar o melhor atendimento ao público.
-                    </p>
-                  </div>
-                </div>
-                <div class="tl-item">
-                  <div class="tl-year">
-                    <p class="f2 heading--sanSerif font-bold">Futrading</p>
-                    <span class="text-white font-bold font-xs"
-                      >Março/2022 - Maio/2025</span
-                    >
-                  </div>
-                  <div class="tl-content">
-                    <h1 class="f3 text--accent ttu">Desenvolvedor Front-end</h1>
-                    <p class="text-white text-justify">
-                      Desenvolvimento de plataforma de gerenciamento e venda de
-                      moedas virtuais do jogo FIFA (EAFC). Criação de telas
-                      guiadas ao UX/UI a fim de garantir a qualidade da entrega
-                      para o usuário, gerando uma diminuição aproximada de 35%
-                      de chamados ao suporte. Desenvolvimento de funcionalidades
-                      baseados na utilização de Laravel, Bootstrap, JQuery e
-                      MySQL, bem como Git para gerenciamento e manipulação do
-                      projeto.
-                    </p>
-                  </div>
-                </div>
-                <div class="tl-item">
-                  <div class="tl-year">
-                    <p class="f2 heading--sanSerif font-bold">
-                      Franquia Extranet
-                    </p>
-                    <span class="text-white font-bold font-xs"
-                      >Março/2023 - Agosto/2024</span
-                    >
-                  </div>
-                  <div class="tl-content">
-                    <h1 class="f3 text--accent ttu">
-                      Desenvolvedor Full-Stack
-                    </h1>
-                    <p class="text-white text-justify">
-                      Desenvolvimento de telas e funcionalidades para a
-                      plataforma das franquias utilizando PHP, JavaScript,
-                      Figma, JQuery e MySQL. Auxílio aos membros da equipe no
-                      desenvolvimento de funcionalidades inovadores e criativas.
-                      Responsável por testar e avaliar a qualidade de layouts
-                      desenvolvidos na plataforma, sempre atento as novidades e
-                      desings modernos, com foco em proporcionar a melhor
-                      experiência para o franqueados.
-                    </p>
-                  </div>
-                </div>
-                <div class="tl-item">
-                  <div class="tl-year">
-                    <p class="f2 heading--sanSerif font-bold">MW Online</p>
-                    <span class="text-white font-bold font-xs"
-                      >Junho/2025 - Atual</span
-                    >
-                  </div>
-                  <div class="tl-content">
-                    <h1 class="f3 text--accent ttu">Desenvolvedor Front-end</h1>
-                    <p class="text-white text-justify">
-                      Responsável por dar suporte a diversos sistemas e
-                      desenvolvimento de novas funcionalidades, utilizando
-                      tecnologias como React, TypeScript, Tailwind CSS, React
-                      Native, WordPress, BitBucket e MySQL. Também desenvolvendo
-                      Landing Pages e sites institucionais.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section id="skills">
-              <div class="d-flex flex-column">
-                <div class="skills-header">
-                  <h2 class="text-center text-yellow font-bold">Habilidades Técnicas</h2>
-                  <p class="text-center text-white font-xs">
-                    Tecnologias e ferramentas com as quais trabalho com confiança
-                  </p>
-                </div>
-                <div class="skills-justify py-4">
-                  <div class="row justify-content-center">
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                      <div class="skill-card text-center p-3">
-                        <i class="bx bxl-react text-yellow" style="font-size: 32px"></i>
-                        <p class="text-white m-0">React</p>
-                      </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                      <div class="skill-card text-center p-3">
-                        <span class="iconify text-yellow pb-2" data-icon="simple-icons:nextdotjs" data-width="32" data-height="32"></span>
-                        <p class="text-white m-0">Next.js</p>
-                      </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                      <div class="skill-card text-center p-3">
-                        <i class="bx bxl-typescript text-yellow" style="font-size: 32px"></i>
-                        <p class="text-white m-0">TypeScript</p>
-                      </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                      <div class="skill-card text-center p-3">
-                        <i class="bx bxl-javascript text-yellow" style="font-size: 32px"></i>
-                        <p class="text-white m-0">JavaScript</p>
-                      </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                      <div class="skill-card text-center p-3">
-                        <i class="bx bxl-react text-yellow" style="font-size: 32px"></i>
-                        <p class="text-white m-0">React Native</p>
-                      </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                      <div class="skill-card text-center p-3">
-                        <i class="bx bxl-php text-yellow" style="font-size: 32px"></i>
-                        <p class="text-white m-0">Laravel</p>
-                      </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                      <div class="skill-card text-center p-3">
-                        <i class="bx bxl-figma text-yellow" style="font-size: 32px"></i>
-                        <p class="text-white m-0">Figma</p>
-                      </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                      <div class="skill-card text-center p-3">
-                        <i class="bx bx-data text-yellow" style="font-size: 32px"></i>
-                        <p class="text-white m-0">SQL</p>
-                      </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                      <div class="skill-card text-center p-3">
-                        <i class="bx bxl-php text-yellow" style="font-size: 32px"></i>
-                        <p class="text-white m-0">PHP</p>
-                      </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                      <div class="skill-card text-center p-3">
-                        <i class="bx bxl-git text-yellow" style="font-size: 32px"></i>
-                        <p class="text-white m-0">Git</p>
-                      </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                      <div class="skill-card text-center p-3">
-                        <i class="bx bx-cube text-yellow" style="font-size: 32px"></i>
-                        <p class="text-white m-0">Bit</p>
-                      </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                      <div class="skill-card text-center p-3">
-                        <i class="bx bxl-bootstrap text-yellow" style="font-size: 32px"></i>
-                        <p class="text-white m-0">Bootstrap</p>
-                      </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                      <div class="skill-card text-center p-3">
-                        <i class="bx bx-paint text-yellow" style="font-size: 32px"></i>
-                        <p class="text-white m-0">Tailwind CSS</p>
-                      </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                      <div class="skill-card text-center p-3">
-                        <i class="bx bx-book-content text-yellow" style="font-size: 32px"></i>
-                        <p class="text-white m-0">Storybook</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </section>
-        <section id="footer-section">
-          <canvas id="silk"></canvas>
-          <section id="projects">
-            <div class="d-flex flex-column">
-              <div class="projects-header">
-                <h2 class="text-yellow font-bold m-0">Projetos</h2>
-                <span class="text-white font-xs"
-                  >Alguns dos projetos que participei ao longo da minha
-                  carreira</span
-                >
-              </div>
-              <div class="projects-justify">
-                <div>
-                  <a
-                    href="https://www.agenciaeasymidia.com.br/"
-                    target="_blank"
-                    class="easymidia"
-                  >
-                    <img
-                      src="public/assets/img/easymidia.png"
-                      alt="Easy Mídia"
-                    />
-                  </a>
-                  <a
-                    href="https://futrading.com"
-                    target="_blank"
-                    class="project-futrading"
-                  >
-                    <img
-                      src="public/assets/img/home-futrading.png"
-                      alt="Futrading"
-                    />
-                  </a>
-                  <a
-                    href="https://homebooks.netlify.app/"
-                    target="_blank"
-                    class="front-end-challenger"
-                  >
-                    <img
-                      src="public/assets/img/front-end-challenger.png"
-                      alt="Front-End Challenger"
-                    />
-                  </a>
-                  <a
-                    href="https://oticalamendes.com.br"
-                    target="_blank"
-                    class="otica-lamendes"
-                  >
-                    <img
-                      src="public/assets/img/oticalamendes.png"
-                      alt="Otica Lamendes"
-                    />
-                  </a>
-                  <a
-                    href="https://advsouzanunes.com.br"
-                    target="_blank"
-                    class="project-adv"
-                  >
-                    <img
-                      src="public/assets/img/home-adv.png"
-                      alt="Advogados Souza Nunes"
-                    />
-                  </a>
-                  <a
-                    href="https://app.petepet.pet"
-                    target="_blank"
-                    class="petepet"
-                  >
-                    <img
-                      src="public/assets/img/petepet.png"
-                      alt="Pet&pet"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="contact">
-            <div class="d-flex flex-column">
-              <div class="contact-header">
-                <h2 class="text-center text-yellow font-bold">
-                  Entre em contato
-                </h2>
-              </div>
-              <div class="contact-justify">
-                <div
-                  class="d-flex flex-column justify-content-center text-center"
-                >
-                  <h5 class="text-white">
-                    Se interessou pelo meu trabalho? Me chame para conversarmos!
-                  </h5>
-                  <h5 class="text-white">Acesse minhas redes sociais.</h5>
-                  <div class="d-flex gap-2 justify-content-center py-4">
-                    <a
-                      href="https://www.linkedin.com/in/felipe-bernardo-dev/"
-                      target="_blank"
-                      class="btn-linkedin"
-                    >
-                      <i class="bx bxl-linkedin m-0"></i>
-                    </a>
-                    <div
-                      class="slide-in-elliptic-top-fwd"
-                      id="toast"
-                      style="display: none"
-                    >
-                      Email copiado com sucesso!
-                    </div>
-                    <span
-                      class="email"
-                      id="copy_email"
-                      data-email="fcbernardo1996@gmail.com"
-                    >
-                      <i class="bx bx-envelope m-0"></i>
-                    </span>
-                    <a
-                      href="https://github.com/Fcb-dev"
-                      target="_blank"
-                      class="btn-github"
-                    >
-                      <i class="bx bxl-github m-0"></i>
-                    </a>
-                    <a
-                      href="https://api.whatsapp.com/send?phone=5532991386102&text=Ol%C3%A1!%20Acessei%20seu%20portf%C3%B3lio%20e%20me%20interessei%20bastante.%20Podemos%20conversar%3F"
-                      target="_blank"
-                      class="btn-whatsapp"
-                    >
-                      <i class="bx bxl-whatsapp m-0"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </section>
-      </div>
-    </div>
-  </body>
-  <footer>
-    <span class="text-white font-xs">© 2024 Desenvolvido por mim</span>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
-  <script src="public/js/three.js"></script>
-  
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-3L8S4FSENX"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-3L8S4FSENX");
-  </script>
-  <script
-    src="https://code.jquery.com/jquery-3.7.1.js"
-    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-  <script src="public/js/index.js"></script>
+      <div class="more-projects"><span>MAIS EXPLORAÇÕES</span><a href="https://homebooks.netlify.app/" target="_blank" rel="noopener noreferrer">Homebooks <span>↗</span></a><a href="https://advsouzanunes.com.br" target="_blank" rel="noopener noreferrer">Souza Nunes Advogados <span>↗</span></a></div>
+    </section>
+    <section class="about section" id="about_me"><span class="eyebrow">02 / ALÉM DO CÓDIGO</span><div class="about-grid"><div class="portrait"><span class="portrait-label">UM POUCO SOBRE MIM</span><span class="portrait-star" aria-hidden="true">✳</span><img src="public/assets/img/felipe-bernardo.png" alt="Felipe Bernardo" loading="lazy" width="992" height="1586"><span class="portrait-caption">Felipe Bernardo<br><small>DESENVOLVEDOR & CURIOSO POR NATUREZA</small></span></div><div class="about-copy"><h2>Interfaces intuitivas.<br>Experiência única.<br><em>Atenção a cada detalhe.</em></h2><p>Sou Felipe, desenvolvedor full stack. Transformo ideias em interfaces intuitivas e elegantes, conectando o cuidado visual à funcionalidade de cada projeto.</p><p>Atualmente, trabalho no Grupo Ribeiro Araujo, desenvolvendo sistemas web e mobile com PHP, Laravel, Filament, React, React Native e TypeScript. Integro APIs REST e MySQL, crio testes com Pest e utilizo Git e Docker no desenvolvimento. Gosto de colaborar, aprender e encontrar soluções que tornem o digital mais simples para quem usa.</p><a class="text-link" href="https://www.linkedin.com/in/felipecorreabernardo/" target="_blank" rel="noopener noreferrer">Mais sobre minha trajetória <span>↗</span></a></div></div></section>
+    <section class="experience section" id="experiences"><div class="section-heading"><div><span class="eyebrow">03 / TRAJETÓRIA</span><h2>Em constante<br><em>evolução.</em></h2></div><p>Experiência que conecta desenvolvimento,<br>colaboração e problemas reais.</p></div><div class="timeline">
+      <details open>
+        <summary><span class="job-date">OUT 2025 - ATUAL (CLT)</span><span class="job-title">Grupo Ribeiro Araujo<small>Desenvolvedor Full Stack</small></span><span class="job-toggle" aria-hidden="true">＋</span></summary>
+        <div class="job-body">
+          <p>Desenvolvimento e manutenção de sistemas e aplicações web e mobile utilizando PHP, Laravel, Filament, React e React Native.</p>
+          <p>Implementação de regras de negócio e APIs REST, integrando aplicações a bancos de dados relacionais com Laravel e MySQL. Criação de interfaces front-end responsivas e componentizadas com React, React Native, TypeScript, JavaScript, HTML5 e CSS3.</p>
+          <p><strong>Testes automatizados:</strong> criação e manutenção de testes com Pest para aumentar a qualidade e a confiabilidade e reduzir regressões.</p><p><strong>Docker:</strong> padronização dos ambientes de desenvolvimento. Uso de Git para versionamento de código e colaboração em equipe.</p>
+          <p>Aplicação de boas práticas de desenvolvimento, Clean Code e princípios de manutenibilidade, performance e escalabilidade.</p>
+          <div class="tags"><span>PHP</span><span>Laravel</span><span>Filament</span><span>MySQL</span><span>Testes automatizados (Pest)</span><span>React</span><span>React Native</span><span>TypeScript</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>APIs REST</span><span>Git</span><span>Docker</span></div>
+        </div>
+      </details>
+      <details><summary><span class="job-date">JUN 2025 - ATUAL (FREELANCER)</span><span class="job-title">MW Online<small>Desenvolvedor Front-end</small></span><span class="job-toggle" aria-hidden="true">＋</span></summary><div class="job-body"><p>Suporte a sistemas e desenvolvimento de novas funcionalidades, landing pages e sites institucionais.</p><div class="tags"><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>React Native</span><span>WordPress</span><span>BitBucket</span><span>MySQL</span></div></div></details>
+      <details><summary><span class="job-date">MAR 2023 — AGO 2024 (PJ)</span><span class="job-title">Franquia Extranet<small>Desenvolvedor Full-Stack</small></span><span class="job-toggle" aria-hidden="true">＋</span></summary><div class="job-body"><p>Desenvolvimento de telas e funcionalidades para a plataforma de franquias. Colaboração com a equipe e avaliação da qualidade dos layouts, com foco na experiência dos franqueados.</p><div class="tags"><span>PHP</span><span>JavaScript</span><span>Figma</span><span>jQuery</span><span>MySQL</span></div></div></details>
+      <details><summary><span class="job-date">MAR 2022 — MAI 2025 (PJ)</span><span class="job-title">Futrading<small>Desenvolvedor Front-end</small></span><span class="job-toggle" aria-hidden="true">＋</span></summary><div class="job-body"><p>Desenvolvimento de plataforma de gerenciamento e venda de moedas virtuais do FIFA (EAFC). Interfaces orientadas a UX/UI que contribuíram para uma redução aproximada de 35% nos chamados ao suporte.</p><div class="tags"><span>Laravel</span><span>Bootstrap</span><span>jQuery</span><span>MySQL</span><span>Git</span></div></div></details>
+      <details><summary><span class="job-date">MAR 2021 — MAR 2022 (CLT)</span><span class="job-title">Edutec<small>Analista de sistemas</small></span><span class="job-toggle" aria-hidden="true">＋</span></summary><div class="job-body"><p>Suporte a software de gestão escolar e capacitação de mais de 15 profissionais. Participação ativa no fechamento de quatro novos clientes nos primeiros três meses.</p></div></details>
+    </div></section>
+    <section class="skills section" id="skills"><span class="eyebrow">04 / FERRAMENTAS DE TRABALHO</span><div class="skills-layout"><h2>As stacks por trás<br>das <em>experiência.</em></h2><div class="skill-groups"><div><h3>INTERFACES & APLICAÇÕES</h3><p>React <span>↗</span> Next.js <span>↗</span> TypeScript<br>JavaScript · React Native<br>HTML5 · CSS3</p></div><div><h3>ESTILO & SISTEMAS VISUAIS</h3><p>Tailwind CSS · Bootstrap<br>Figma · Storybook · Bit</p></div><div><h3>INTEGRAÇÃO & COLABORAÇÃO</h3><p>Laravel · PHP · Filament<br>MySQL · SQL · APIs REST<br>Pest · Git · Docker</p></div></div></div></section>
+    <section class="contact section" id="contact"><div class="contact-top"><span class="eyebrow">05 / PRÓXIMO PASSO</span><span>BOAS IDEIAS COMEÇAM COM UMA CONVERSA.</span></div><a class="contact-title" href="mailto:fcbernardo1996@gmail.com">VAMOS CRIAR<br>ALGO <em>JUNTOS?</em><span aria-hidden="true">↗</span></a><div class="contact-bottom"><div class="email-group"><a href="mailto:fcbernardo1996@gmail.com">fcbernardo1996@gmail.com</a><button id="copy_email" aria-label="Copiar endereço de e-mail">Copiar ↗</button></div><div class="socials"><a href="https://www.linkedin.com/in/felipecorreabernardo/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/Fcb-dev" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://api.whatsapp.com/send?phone=5532991386102&amp;text=Ol%C3%A1!%20Acessei%20seu%20portf%C3%B3lio%20e%20me%20interessei%20bastante.%20Podemos%20conversar%3F" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div></div></section>
+  </main>
+  <footer><span>© <span id="year">2026</span> Felipe Bernardo</span><span>FEITO COM INTENÇÃO. DESENVOLVIDO POR MIM.</span><a href="#home">Voltar ao topo ↑</a></footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3L8S4FSENX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-3L8S4FSENX');</script>
+</body>
 </html>
