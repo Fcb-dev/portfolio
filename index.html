@@ -22,7 +22,11 @@
     </nav>
     <a class="contact-link" href="#contact">Vamos conversar <span aria-hidden="true">↗</span></a>
     <div class="preferences">
-      <select id="language" aria-label="Idioma"><option value="pt-BR" lang="pt-BR">PT</option><option value="en" lang="en">EN</option></select>
+      <div id="language" class="language-switch" role="group" aria-label="Idioma">
+        <span class="language-indicator" aria-hidden="true"></span>
+        <button type="button" data-language="pt-BR" lang="pt-BR" aria-label="Português" aria-pressed="true">PT</button>
+        <button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+      </div>
       <button id="theme-toggle" type="button" aria-label="Ativar tema claro" aria-pressed="false"><span aria-hidden="true">☀</span></button>
     </div>
     <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Abrir menu">Menu <span aria-hidden="true">＋</span></button>
