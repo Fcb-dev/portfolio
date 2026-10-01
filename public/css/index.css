@@ -1135,18 +1135,33 @@ footer>span:nth-child(2) {
 [data-theme="light"] .contact a:focus-visible,[data-theme="light"] .contact button:focus-visible { outline-color:#161814; }
 [data-theme="light"] .motion-toggle { border-color:var(--line); }
 [data-theme="light"] .hero-laser { mix-blend-mode:multiply; }
-.theme-reveal::view-transition-old(root),.theme-reveal::view-transition-new(root) {
-  animation:none; mix-blend-mode:normal;
+/* Temporarily override hover/motion transitions so every surface changes together. */
+html.theme-fade *,html.theme-fade *::before,html.theme-fade *::after {
+  transition:background-color .8s ease,color .8s ease,border-color .8s ease,
+    box-shadow .8s ease,-webkit-text-stroke-color .8s ease !important;
 }
-.theme-reveal::view-transition-old(root) { z-index:1; }
-.theme-reveal::view-transition-new(root) { z-index:2; }
-.theme-reveal::view-transition { pointer-events:none; }
-.theme-fade body,.theme-fade .header,.theme-fade section,.theme-fade .preferences button,
-.theme-fade .language-switch,.theme-fade h1>span,.theme-fade em {
-  transition:background-color .45s ease,color .45s ease,border-color .45s ease;
+#theme-toggle { position:relative; isolation:isolate; }
+#theme-toggle.theme-switching span { animation:theme-icon-turn .8s cubic-bezier(.22,1,.36,1); }
+#theme-toggle.theme-switching::after {
+  content:''; position:absolute; inset:-2px; border:2px solid var(--lime);
+  border-radius:50%; pointer-events:none; animation:theme-ring .8s ease-out both;
+}
+@keyframes theme-icon-turn {
+  0% { rotate:-100deg; scale:.5; opacity:.3; }
+  60% { scale:1.18; opacity:1; }
+  100% { rotate:0deg; scale:1; opacity:1; }
+}
+@keyframes theme-ring {
+  from { transform:scale(.8); opacity:.7; }
+  to { transform:scale(1.9); opacity:0; }
 }
 @media (prefers-reduced-motion:reduce) {
   .language-switch .language-indicator,#theme-toggle span,.preferences .language-switch button { transition:none; }
+  /* A short color fade remains gentle; omit rotation, scaling and the expanding ring. */
+  html.theme-fade *,html.theme-fade *::before,html.theme-fade *::after {
+    transition:background-color .2s ease,color .2s ease,border-color .2s ease,
+      -webkit-text-stroke-color .2s ease !important;
+  }
 }
 @media (min-width:601px) and (max-width:1100px) {
   .header { gap:16px; }

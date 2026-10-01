@@ -122,30 +122,20 @@ window.portfolioPreferences = (() => {
         save('portfolio-theme', theme);
         updateTheme();
       };
-      if (reducedMotion.matches) { applyTheme(); return; }
       switchingTheme = true;
       const root = document.documentElement;
       try {
-        if (document.startViewTransition) {
-          const bounds = themeToggle.getBoundingClientRect();
-          const x = bounds.left + bounds.width / 2;
-          const y = bounds.top + bounds.height / 2;
-          const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
-          root.classList.add('theme-reveal');
-          const transition = document.startViewTransition(applyTheme);
-          await transition.ready;
-          await root.animate({ clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`] }, {
-            duration: 650, easing: 'cubic-bezier(.22, 1, .36, 1)', pseudoElement: '::view-transition-new(root)'
-          }).finished;
-          await transition.finished;
-        } else {
-          root.classList.add('theme-fade');
-          applyTheme();
-          await new Promise(resolve => setTimeout(resolve, 450));
-        }
-      } catch { /* A skipped visual transition does not affect the selected theme. */ }
+        // Install transitions and resolve the old colors before changing the theme.
+        // This works without View Transitions, including browsers that skip snapshots.
+        root.classList.add('theme-fade');
+        getComputedStyle(document.body).backgroundColor;
+        applyTheme();
+        if (!reducedMotion.matches) themeToggle.classList.add('theme-switching');
+        await new Promise(resolve => setTimeout(resolve, reducedMotion.matches ? 250 : 850));
+      }
       finally {
-        root.classList.remove('theme-reveal', 'theme-fade');
+        root.classList.remove('theme-fade');
+        themeToggle.classList.remove('theme-switching');
         switchingTheme = false;
       }
     });
