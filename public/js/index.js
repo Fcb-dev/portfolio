@@ -1,16 +1,17 @@
+const t = window.portfolioPreferences.t;
 const menu = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
 function closeMenu(returnFocus = false) {
   navigation.classList.remove('is-open');
   menu.setAttribute('aria-expanded', 'false');
-  menu.setAttribute('aria-label', 'Abrir menu');
+  menu.setAttribute('aria-label', t('Abrir menu'));
   if (returnFocus) menu.focus();
 }
 menu.addEventListener('click', () => {
   const open = menu.getAttribute('aria-expanded') !== 'true';
   navigation.classList.toggle('is-open', open);
   menu.setAttribute('aria-expanded', String(open));
-  menu.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+  menu.setAttribute('aria-label', t(open ? 'Fechar menu' : 'Abrir menu'));
 });
 navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', () => closeMenu()));
 document.addEventListener('keydown', event => {
@@ -50,7 +51,7 @@ function effectsEnabled() {
 function updateMotionControl() {
   const enabled = effectsEnabled();
   document.documentElement.classList.toggle('pointer-effects', enabled);
-  motionToggle.textContent = enabled ? 'Desativar efeitos ↗' : 'Ativar efeitos ↗';
+  motionToggle.textContent = t(enabled ? 'Desativar efeitos ↗' : 'Ativar efeitos ↗');
   motionToggle.setAttribute('aria-pressed', String(enabled));
   motionToggle.hidden = !motionAllowed.matches;
 }
@@ -73,7 +74,7 @@ const projectImages = document.querySelectorAll('.project-image');
 const projectCursor = document.createElement('div');
 projectCursor.className = 'project-cursor';
 projectCursor.setAttribute('aria-hidden', 'true');
-projectCursor.textContent = 'Ver projeto ↗';
+projectCursor.textContent = t('Ver projeto ↗');
 document.body.append(projectCursor);
 let motionFrame = 0;
 let latestPointer;
@@ -232,9 +233,9 @@ document.querySelector('#copy_email').addEventListener('click', async () => {
   const toast = document.querySelector('#toast');
   try {
     await navigator.clipboard.writeText('fcbernardo1996@gmail.com');
-    toast.textContent = 'E-mail copiado! Vamos conversar.';
+    toast.textContent = t('E-mail copiado! Vamos conversar.');
   } catch {
-    toast.textContent = 'Não foi possível copiar. Use o link de e-mail ao lado.';
+    toast.textContent = t('Não foi possível copiar. Use o link de e-mail ao lado.');
   }
   clearTimeout(toastTimer);
   toast.classList.add('show');
@@ -296,4 +297,10 @@ window.addEventListener('popstate', cancelAnchorScroll);
 window.addEventListener('resize', cancelAnchorScroll);
 document.addEventListener('keydown', event => {
   if (['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' ', 'Escape', 'Tab'].includes(event.key)) cancelAnchorScroll();
+});
+
+document.addEventListener('languagechange', () => {
+  updateMotionControl();
+  projectCursor.textContent = t('Ver projeto ↗');
+  menu.setAttribute('aria-label', t(menu.getAttribute('aria-expanded') === 'true' ? 'Fechar menu' : 'Abrir menu'));
 });
